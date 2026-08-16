@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookFinder — API Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+<nav class="nav"><div class="logo">BOOK<span>FINDER</span></div><div class="badge">PUBLIC REST API</div></nav>
+<div class="hero-content">
+<p class="eyebrow">DISCOVER YOUR NEXT READ</p>
+<h1>Search millions of<br><span>books instantly.</span></h1>
+<p class="subtitle">Explore titles, authors and editions using live data from the Open Library API.</p>
+<form id="searchForm" class="search-box">
+<input id="searchInput" type="search" placeholder="Search by title, author, or topic..." autocomplete="off">
+<button type="submit">Search</button>
+</form>
+<p class="hint">Try: <button class="quick" type="button" data-query="Harry Potter">Harry Potter</button> <button class="quick" type="button" data-query="Agatha Christie">Agatha Christie</button> <button class="quick" type="button" data-query="science">Science</button></p>
+</div>
+</header>
+<main class="content">
+<section class="results-head"><div><p class="eyebrow">LIVE RESULTS</p><h2 id="resultsTitle">Popular books</h2></div><span id="count" class="count"></span></section>
+<div id="state" class="state" aria-live="polite"></div>
+<section id="results" class="grid"></section>
+</main>
+<footer>BookFinder • Built with HTML, CSS & JavaScript Fetch API</footer>
+<script src="script.js"></script>
+</body>
+</html>
